@@ -1,0 +1,25 @@
+.counter {
+  display: flex;
+}
+
+.add {
+  width: 35px;
+  height: 35px;
+  border: solid;
+  border-radius: 35px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+}
+
+.subtract {
+  width: 35px;
+  height: 35px;
+  border: solid;
+  border-radius: 35px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+}

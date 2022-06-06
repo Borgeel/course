@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./styles.css";
 
-function App() {
+import Boxes from "./data/Boxes";
+
+//components
+import IdCard from "./components/IdCard";
+import Counter from "./components/Counter";
+import Header from "./components/Header";
+import Body from "./components/Body";
+import Jokes from "./components/Jokes";
+import Messages from "./components/Messages";
+
+function App(props) {
+  const [user, setUser] = useState("Zana");
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header user={user} />
+      <hr />
+      <IdCard />
+      <hr />
+      <Body user={user} darkMode={true} />
+      <hr />
+      <Counter />
+      <hr />
+      <Messages />
+      <hr />
+      <Jokes />
     </div>
   );
 }

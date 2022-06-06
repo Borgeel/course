@@ -1,0 +1,20 @@
+.card {
+  display: flex;
+  width: 400px;
+  border: solid;
+  border-radius: 5px;
+  padding: 5px 5px;
+  gap: 10px;
+}
+
+.contact-photo {
+  height: 150px;
+  width:auto;
+  border-radius: 5px;
+}
+
+.star {
+  height: 20px;
+  width:auto
+}
+
